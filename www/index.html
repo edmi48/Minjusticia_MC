@@ -107,9 +107,7 @@ ventana_ancho2= (ventana_ancho2-300)/2;
 	function abrir_opcion(pagina) 
 { 
 if (checkConnection() == 1) {
-	alert(pagina+"antes");
 	window.location = (pagina); 
-	alert(pagina+" despues");
 }
 else  $.Zebra_Dialog('<strong>No es posible ejecutar esta funcionalidad sin Conexión a Internet</strong>', {
     'type':     'error',
@@ -119,7 +117,6 @@ else  $.Zebra_Dialog('<strong>No es posible ejecutar esta funcionalidad sin Cone
 
 function abrir_twitter()
 {
- alert (device.platform);
  if (device.platform  == 'iOS') 
  /*$.Zebra_Dialog('<strong>Funcionalidad No Disponible para iOS</strong>', {
     'type':     'warning',
@@ -128,9 +125,8 @@ function abrir_twitter()
 window.open('https://mobile.twitter.com/MinjusticiaCo', '_blank', 'location=yes');
 //window.location = ('sigueme_ios.html'); 
  else {
- alert("abrir sigueme.html");
  pagina="sigueme.html";
-  abrir_opcion("sigueme.html");
+ abrir_opcion("sigueme.html");
  }
 } 
         function checkConnection() 
@@ -149,7 +145,14 @@ window.open('https://mobile.twitter.com/MinjusticiaCo', '_blank', 'location=yes'
 <body onresize="window.location.reload();" onload="inicializa_db();">
 
 <script> document.write('<div class="navigation" id="navigata" style="min-width: auto; height: '+ventana_alto2+'px; margin: auto auto">') </script>
-<script> document.write('<img src="images/fondo.jpg" alt="Fondo" id="bg" style="height: '+ventana_alto2+'px; width: auto; left: 0px;">') </script>
+<script> 
+	if ($(window).width() < $(window).height()) {
+		document.write('<img src="images/fondo.jpg" alt="Fondo" id="bg" style="height: '+ventana_alto2+'px; width: auto; left: 0px;">') 
+	}
+	else {
+		document.write('<img src="images/fondo_ancho.jpg" alt="Fondo" id="bg" style="height: '+ventana_alto2+'px; width: auto; left: 0px;">') 
+	}
+</script>
 
 <script> 
 
