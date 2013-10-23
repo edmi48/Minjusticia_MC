@@ -19,11 +19,11 @@ var bg = jQuery("#bg");
 ratio = 1;
  
 if (screenWidth/screenHeight > ratio) {
-$(bg).height("100%");
-$(bg).width("100%");
+$(bg).height("90%");
+$(bg).width("60%");
 } else {
 $(bg).width("100%");
-$(bg).height("100%");
+$(bg).height("90%");
 }
  
 // Si a la imagen le sobra anchura, la centramos a mano
@@ -55,8 +55,9 @@ updateBackground();
 	
 </script>		
     </head>
+	
 <body>
-<center><div id="container" style="width: 100%; height: 100%; margin: auto auto">
+<center><div id="container" style="width: 100%; height: 90%; margin: auto auto">
 <img src="images/creditos.png" alt="Fondo" id="bg">
 <p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Regresar</a></p>
 </div></center>
