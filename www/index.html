@@ -107,8 +107,9 @@ ventana_ancho2= (ventana_ancho2-300)/2;
 	function abrir_opcion(pagina) 
 { 
 if (checkConnection() == 1) {
-	alert(pagina);
+	alert(pagina+"antes");
 	window.location = (pagina); 
+	alert(pagina+" despues");
 }
 else  $.Zebra_Dialog('<strong>No es posible ejecutar esta funcionalidad sin Conexión a Internet</strong>', {
     'type':     'error',
