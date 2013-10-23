@@ -10,11 +10,11 @@ h1{
 	padding-top: 20px; 
 }
 #divCarousel{
-	width: 300px;
+	width: 320px;
 	position: absolute;	
 }
 	#divCarousel #divIzquierda{
-		width: 20px;
+		width: 35px;
 		height: 100px;
 		float: left;
 		cursor: pointer;
@@ -24,7 +24,7 @@ h1{
 			background: url(../images/izquierda-hover.png) center no-repeat;
 		}
 	#divCarousel #divDerecha{
-		width: 20px;
+		width: 35px;
 		height: 100px;
 		float: left;
 		cursor: pointer;
