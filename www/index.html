@@ -162,9 +162,9 @@ window.open('https://mobile.twitter.com/MinjusticiaCo', '_blank', 'location=yes'
 					document.write('<li><a href="orientate.html" target="_self"><img src="images/opcion1.png" class="imagen-link" height="55px" width="50px" ></a></li>')
 					document.write('<li><a href="#" onclick=\'abrir_opcion("informate.html");return false\'><img src="images/opcion2.png" class="imagen-link" height="55px" width="50px"></a></li>')
 					document.write('<li><a href="#" onclick="abrir_twitter();"><img src="images/opcion3.png" class="imagen-link" height="55px" width="50px"></a></li>')
-					document.write('<li><a href="sugiereme.html" target="_self"><img src="images/opcion4.png" class="imagen-link" height="55px" width="50px"></a></li>')
+					document.write('<li><a href="#" onclick=\'abrir_opcion("sugiereme.html");return false\'><img src="images/opcion4.png" class="imagen-link" height="55px" width="50px"></a></li>')
 					document.write('<li><a href="creditos.html" target="_self"><img src="images/opcion5.png" class="imagen-link" height="55px" width="50px"></a></li>')
-					document.write('<li><a href="actualizame.html" target="_self"><img src="images/opcion6.png" class="imagen-link" height="55px" width="50px"></a></li>')
+					document.write('<li><a href="#" onclick=\'abrir_opcion("actualizame.html");return false\'><img src="images/opcion6.png" class="imagen-link" height="55px" width="50px"></a></li>')
 				document.write('</ul>')
 			document.write('</div>')
 			document.write('<div id="divDerecha"></div>')
@@ -173,31 +173,29 @@ window.open('https://mobile.twitter.com/MinjusticiaCo', '_blank', 'location=yes'
  }
  else 
  {
-				document.write('<div class="item shop">')
+		document.write('<div class="item shop">')
                 document.write('<a href="orientate.html" target="_self"><img src="images/opcion1.png"></a>')
-				document.write('</div>')
+		document.write('</div>')
 				
                 document.write('<div class="item youtube" >')
                 document.write('<a href="#" onclick=\'abrir_opcion("informate.html");return false\'><img src="images/opcion2.png"></a>')
                 document.write('</div>')
 				
                 document.write('<div class="item fav">')
-                document.write('<a href="#" onclick=\'abrir_twitter();return false\'><img src="images/opcion3.png">')
+                document.write('<a href="#" onclick="abrir_twitter();"><img src="images/opcion3.png"></a>')
                 document.write('</div>')
 				
                 document.write('<div class="item home">')
-                document.write('<a href="sugiereme.html" target="_self"><img src="images/opcion4.png">')
+                document.write('<a href="#" onclick=\'abrir_opcion("sugiereme.html");return false\'><img src="images/opcion4.png"></a>')
                 document.write('</div>')
 
                 document.write('<div class="item user" >')
-                document.write('<a href="creditos.html" target="_self"><img src="images/opcion5.png">')
+                document.write('<a href="creditos.html" target="_self"><img src="images/opcion5.png"></a>')
                 document.write('</div>')
 				
-				document.write('<div class="item actual" >')
-                document.write('<a href="actualizame.html" target="_self"><img src="images/opcion6.png">')
+		document.write('<div class="item actual" >')
+                document.write('<a href="#" onclick=\'abrir_opcion("actualizame.html");return false\'><img src="images/opcion6.png"></a>')
                 document.write('</div>')
-				
-	checkConnection();
 				
 }			
 </script> 				
