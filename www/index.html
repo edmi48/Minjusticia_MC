@@ -155,6 +155,19 @@ window.open('https://mobile.twitter.com/MinjusticiaCo', '_blank', 'location=yes'
 </script>
 
 <script> 
+	
+	var icon_alto;				
+	var icon_ancho;
+
+	if ($(window).width() < $(window).height()) {
+		icon_alto = 55;				
+		icon_ancho = 50;
+		
+	}
+	else {
+		icon_alto = 40;				
+		icon_ancho = 35;
+	}
 
  if ($(window).width() < 450)
  {
@@ -162,12 +175,12 @@ window.open('https://mobile.twitter.com/MinjusticiaCo', '_blank', 'location=yes'
 			document.write('<div id="divIzquierda"></div>')
 			document.write('<div id="divCentro">')
 				document.write('<ul>')
-					document.write('<li><a href="orientate.html" target="_self"><img src="images/opcion1.png" class="imagen-link" height="55px" width="50px" ></a></li>')
-					document.write('<li><a href="#" onclick=\'abrir_opcion("informate.html");return false\'><img src="images/opcion2.png" class="imagen-link" height="55px" width="50px"></a></li>')
-					document.write('<li><a href="#" onclick="abrir_twitter();"><img src="images/opcion3.png" class="imagen-link" height="55px" width="50px"></a></li>')
-					document.write('<li><a href="#" onclick=\'abrir_opcion("sugiereme.html");return false\'><img src="images/opcion4.png" class="imagen-link" height="55px" width="50px"></a></li>')
-					document.write('<li><a href="creditos.html" target="_self"><img src="images/opcion5.png" class="imagen-link" height="55px" width="50px"></a></li>')
-					document.write('<li><a href="#" onclick=\'abrir_opcion("actualizame.html");return false\'><img src="images/opcion6.png" class="imagen-link" height="55px" width="50px"></a></li>')
+					document.write('<li><a href="orientate.html" target="_self"><img src="images/opcion1.png" class="imagen-link" height="'+icon_alto+'px" width="'+icon_ancho+'px" ></a></li>')
+					document.write('<li><a href="#" onclick=\'abrir_opcion("informate.html");return false\'><img src="images/opcion2.png" class="imagen-link" height="'+icon_alto+'px" width="'+icon_ancho+'px" ></a></li>')
+					document.write('<li><a href="#" onclick="abrir_twitter();"><img src="images/opcion3.png" class="imagen-link" height="'+icon_alto+'px" width="'+icon_ancho+'px" ></a></li>')
+					document.write('<li><a href="#" onclick=\'abrir_opcion("sugiereme.html");return false\'><img src="images/opcion4.png" class="imagen-link" height="'+icon_alto+'px" width="'+icon_ancho+'px" ></a></li>')
+					document.write('<li><a href="creditos.html" target="_self"><img src="images/opcion5.png" class="imagen-link" height="'+icon_alto+'px" width="'+icon_ancho+'px" ></a></li>')
+					document.write('<li><a href="#" onclick=\'abrir_opcion("actualizame.html");return false\'><img src="images/opcion6.png" class="imagen-link" height="'+icon_alto+'px" width="'+icon_ancho+'px" ></a></li>')
 				document.write('</ul>')
 			document.write('</div>')
 			document.write('<div id="divDerecha"></div>')
